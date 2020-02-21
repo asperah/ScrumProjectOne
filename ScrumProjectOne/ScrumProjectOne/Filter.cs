@@ -10,13 +10,18 @@ namespace ScrumProjectOne {
         static int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
         static string[] numbers2 = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "eleven", "twelve", "thirteen", "fourteen" };
 
-        public static void FOperationen() {
-
-
-
+        public static void ShowArray1() {
             Console.WriteLine("int[] numbers = {5,4,1,3,9,8,6,7,2,0,22,12,16,18,11,19,13}");
             Console.WriteLine();
+        }
 
+        public static void ShowArray2() {
+            Console.WriteLine("string[] numbers2 = {'zero','one','two','three','four','five','six','seven','eight','nine','eleven','twelve','thirteen','fourteen'}");
+            Console.WriteLine();
+        }
+
+        public static void Filter1a()
+        {
             //Aufgabe 1.1:
             Console.WriteLine("1. Alle zahlen echt kleiner als 7: ");
 
@@ -31,7 +36,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter2a() {
             //Aufgabe 1.2:
             Console.WriteLine("2.Alle geraden Zahlen: ");
             var numQuery2 =
@@ -45,7 +52,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter3a() {
             //Aufgabe 1.3:
             Console.WriteLine("3.Alle einstelligen ungeraden Zahlen: ");
             var numQuery3 =
@@ -59,7 +68,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter4a() {
             //Aufgabe 1.4:
             Console.WriteLine("4.Alle geraden Zahlen ab dem 6. Element einschließlich: ");
             var numQuery4 =
@@ -73,16 +84,12 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+        public static void Filter1b() {
             //Aufgabe 2.1:
-
-            Console.WriteLine("string[] numbers2 = {'zero','one','two','three','four','five','six','seven','eight','nine','eleven','twelve','thirteen','fourteen'}" );
-            Console.WriteLine();
-
             Console.WriteLine("2.1 Alle Zahlen die drei Zeichen lang sind: ");
-            
+
             var letterQuery1 =
             from letters in numbers2
             where letters.Length == 3
@@ -94,7 +101,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter2b() {
             //Aufgabe 2.2:
 
             Console.WriteLine("2.2 Alle Zahlen die ein o enthalten: ");
@@ -110,7 +119,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter3b() {
             //Aufgabe 2.3:
 
             Console.WriteLine("2.3 Alle Zahlen die auf teen enden: ");
@@ -126,6 +137,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
+
+        public static void Filter4b() {
 
             //Aufgabe 2.4:
 
@@ -142,7 +156,9 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
+        }
 
+        public static void Filter5b() {
             //Aufgabe 2.5:
 
             Console.WriteLine("2.5 Alle Zahlen die auf teen enden: ");
@@ -158,12 +174,24 @@ namespace ScrumProjectOne {
             }
             Console.WriteLine();
             Console.WriteLine();
-
-
-
-
-
         }
+
+        public static void FilterAll() {
+            ShowArray1();
+            Filter1a();
+            Filter2a();
+            Filter3a();
+            Filter4a();
+            ShowArray2();
+            Filter1b();
+            Filter2b();
+            Filter3b();
+            Filter4b();
+            Filter5b();
+        }
+
+
+
 
 
     }

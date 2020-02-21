@@ -10,7 +10,7 @@ namespace ScrumProjectOne
     {
         static void Main(string[] args)
         {
-            Filter.FOperationen();
+            Filter.FilterAll();
 
             Console.ReadLine();
         }
