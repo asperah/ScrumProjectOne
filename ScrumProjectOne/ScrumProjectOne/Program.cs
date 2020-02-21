@@ -11,16 +11,16 @@ namespace ScrumProjectOne
         static void Main(string[] args)
         {
 
+            Gruppierung.GruppierenNachLängeUndAnfangsbuchstabe();
 
-
-            Partitionierung parti = new Partitionierung();
-            Console.WriteLine("Hallo");
-            parti.fiveNewestFiles();
-            parti.lastFive();
-            parti.notFirstAndLastThree();
-            parti.firstFive();
-            parti.allExpectNull();
-            parti.upToTwelvev();
+            //Partitionierung parti = new Partitionierung();
+            //Console.WriteLine("Hallo");
+            //parti.fiveNewestFiles();
+            //parti.lastFive();
+            //parti.notFirstAndLastThree();
+            //parti.firstFive();
+            //parti.allExpectNull();
+            //parti.upToTwelvev();
             
            
 
