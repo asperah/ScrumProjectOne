@@ -10,6 +10,8 @@ namespace ScrumProjectOne
     {
         static void Main(string[] args)
         {
+            Sortieren.sortieren();
+            Console.ReadLine();
         }
     }
 }
