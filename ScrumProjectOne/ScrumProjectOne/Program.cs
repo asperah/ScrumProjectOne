@@ -10,6 +10,9 @@ namespace ScrumProjectOne
     {
         static void Main(string[] args)
         {
+
+
+
             Partitionierung parti = new Partitionierung();
             Console.WriteLine("Hallo");
             parti.fiveNewestFiles();
@@ -20,6 +23,7 @@ namespace ScrumProjectOne
             parti.upToTwelvev();
             
            
+
             Console.ReadLine();
         }
     }
