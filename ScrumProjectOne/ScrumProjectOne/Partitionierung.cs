@@ -12,7 +12,6 @@ namespace ScrumProjectOne
         private int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
         DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\ScrumProjectOne");
         
-
         public void fiveNewestFiles()
         {
             List<FileSystemInfo> fsi;
@@ -22,11 +21,8 @@ namespace ScrumProjectOne
             foreach (var item in fsi)
             {
                 Console.WriteLine(item.FullName+ ", "+ item.CreationTime+";");
-            }
-            
+            }            
         }
-
-
 
         public void firstFive()
         {
