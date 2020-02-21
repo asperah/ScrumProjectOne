@@ -22,7 +22,7 @@ namespace ScrumProjectOne
             parti.allExpectNull();
             parti.upToTwelvev();
             
-           
+
 
             Console.ReadLine();
         }
