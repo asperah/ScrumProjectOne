@@ -7,6 +7,7 @@ using System.IO;
 
 namespace ScrumProjectOne
 {
+
     class Partitionierung
     {
         private int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
@@ -16,7 +17,7 @@ namespace ScrumProjectOne
         public void fiveNewestFiles()
         {
             List<FileSystemInfo> fsi;
-            var aufg1 = info.GetFileSystemInfos().Take(5).OrderBy(x=>x.CreationTime);
+            var aufg1 = info.GetFileSystemInfos().Take(5).OrderBy(x => x.CreationTime);
             fsi = aufg1.ToList();
             Console.WriteLine("Diese letzten 5 erstellten Files in dem Ordner:");
             foreach (var item in fsi)
@@ -35,15 +36,16 @@ namespace ScrumProjectOne
             liste = aufg1.ToList();
             Console.WriteLine("Die ersten 5 Elemte in der Liste: ");
             foreach (var item in liste)
-            {                
-                Console.Write(item+", ");
-            }            
+            {
+                Console.Write(item + ", ");
+            }
+            
         }
 
-        public void lastFive()
+        public static void lastFive()
         {
             List<int> liste = new List<int>();
-            var aufg1 = numbers.Skip(liste.Count-5);
+            var aufg1 = numbers.Skip(liste.Count - 5);
             liste = aufg1.ToList();
             Console.WriteLine("Die letzten 5 Elemte in der Liste: ");
             foreach (var item in liste)
@@ -51,10 +53,10 @@ namespace ScrumProjectOne
                 Console.Write(item + ", ");
             }
         }
-        public void notFirstAndLastThree()
+        public static void notFirstAndLastThree()
         {
             List<int> liste = new List<int>();
-            var aufg1 = numbers.Skip(3).Take(liste.Count-3);
+            var aufg1 = numbers.Skip(3).Take(liste.Count - 3);
             liste = aufg1.ToList();
             Console.WriteLine("Alle Elemente der Liste bist auf die ersten und letzten Drei: ");
             foreach (var item in liste)
@@ -62,7 +64,7 @@ namespace ScrumProjectOne
                 Console.Write(item + ", ");
             }
         }
-        public void allExpectNull()
+        public static void allExpectNull()
         {
             List<int> liste = new List<int>();
             var aufg1 = from num in numbers where num > 0 select 0;
@@ -73,10 +75,10 @@ namespace ScrumProjectOne
                 Console.Write(item + ", ");
             }
         }
-        public void upToTwelvev()
+        public static void upToTwelvev()
         {
             List<int> liste = new List<int>();
-            var aufg1 = numbers.SkipWhile(x=>x==12);
+            var aufg1 = numbers.SkipWhile(x => x == 12);
             liste = aufg1.ToList();
             Console.WriteLine("Elemente der Liste nach der Zahl 12: ");
             foreach (var item in liste)
@@ -85,8 +87,60 @@ namespace ScrumProjectOne
             }
         }
 
+        public static void AuswahlVerfahren()
+        {
+            int auswahl;
+
+            Console.WriteLine("Welches Partitionierungsverfahren möchten sie anwenden ?\n" +
+                              "[1] Die ersten fünf Elemente des Arrays ausgeben. \n" +
+                              "[2] Die letzten fünf Elemente des Arrays ausgeben.\n" +
+                              "[3] Alle Elemente bis auf die ersten und letzten drei im Array.\n" +
+                              "[4] Alle Elemente des Arrays die größer als 0 sind.\n" +
+                              "[5] Alle Elemente im Array nach der Zwölf.\n" +
+                              "[6] Die fünf neuesten Dateien in einem Verzeichnis.\n");
+
+            auswahl = Convert.ToInt32(Console.ReadLine());
+
+            switch (auswahl)
+            {
+                case 1:
+                    {
+                        firstFive();
+                        break;
+                    }
+                case 2:
+                    {
+
+                        lastFive();
+                        break;
+                    }
+                case 3:
+                    {
+                        notFirstAndLastThree();
+                        break;
+
+                    }
+                case 4:
+                    {
+                        allExpectNull();
+                        break;
+
+                    }
+                case 5:
+                    {
+
+                        upToTwelvev();
+                        break;
+                    }
+                case 6:
+                    {
+                        fiveNewestFiles();
+                        break;
+                    }
+
+            }
 
 
-
+        }
     }
 }

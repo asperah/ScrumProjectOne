@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ScrumProjectOne {
+
     class Filter {
 
         static int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
@@ -176,23 +177,88 @@ namespace ScrumProjectOne {
             Console.WriteLine();
         }
 
-        public static void FilterAll() {
-            ShowArray1();
-            Filter1a();
-            Filter2a();
-            Filter3a();
-            Filter4a();
-            ShowArray2();
-            Filter1b();
-            Filter2b();
-            Filter3b();
-            Filter4b();
-            Filter5b();
+
+        public static void AuswahlVerfahren()
+        {
+        Console.Clear();
+            bool filtermenu=true;
+            while (filtermenu)
+            {
+               
+                int auswahl;
+                Console.WriteLine(  "=============================================\n" +
+                                    "+                  Filter                   +\n" +
+                                    "=============================================");
+                Console.WriteLine("Welches Sortier Verfahren möchten sie anwenden ?\n" +
+
+                    "+Zahlen+\n" +
+                                  "\t[1] Alle Zahlen kleiner als 7 anzeigen. \n" +
+                                  "\t[2] Alle gerade Zahlen anzeigen.\n" +
+                                  "\t[3] Alle einstelligen ungeraden Zahlen anzeigen.\n" +
+                                  "\t[4] Alle geraden Zahlen ab dem sechsten Element im Array anzeigen.\n" +
+                    "+Ausgeschriebene Zahlen+" +
+                                  "\n" +
+                                  "\t[5] Alle Zahlen die drei Zeichen lang sind.\n" +
+                                  "\t[6] Alle Zahlen die ein 'o' enthalten anzeigen.\n" +
+                                  "\t[7] Alle zahlen die auf 'Teen' enden.\n" +
+                                  "\t[8] Die Großbuchstabendasstellung aller Zahlen die auf 'teen' enden anzeigen.\n" +
+                                  "\t[9] Alle Zahlen die 'four' enthalten anzeigen.\n\b"+
+                    "[0] Zurück zum Hauptmenü.\n");
+                auswahl = Convert.ToInt32(Console.ReadLine());
+
+                switch (auswahl)
+                {
+                    case 0:
+                        filtermenu = false;
+                        break;
+                    case 1:                        
+                            Filter1a();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 2:
+                            Filter2a();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 3:                        
+                            Filter3a();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 4:                        
+                            Filter4a();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 5:
+                            Filter1b();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 6:
+                            Filter2b();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 7:                        
+                            Filter3b();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 8:                        
+                            Filter4b();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;                        
+                    case 9:                        
+                            Filter5b();
+                            Console.ReadLine();
+                            Console.Clear();
+                            break;
+                }
+            }
         }
-
-
-
-
 
     }
 }

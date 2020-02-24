@@ -7,12 +7,13 @@ using System.IO;
 namespace ScrumProjectOne
 {
 
+
     public delegate void SortierenDelegate();
+
       
 
     class Sortieren
     {
-        public static SortierenDelegate sortieren = new SortierenDelegate(Sortieren.AuswahlVerfahren);
 
         static int[] numbers = new int[] { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
         static string[] numbers2 = new string[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen" };
@@ -83,7 +84,9 @@ namespace ScrumProjectOne
 
         }
         // Erstellen der Directory Info Objekt
-        static DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\source\repos\ScrumProjectOne\ScrumProjectOne\ScrumProjectOne");
+
+        static DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\ScrumProjectOne");
+
 
         //Inhalt absteigend nach namen sortiert 
         public static void InhaltAbsteigendNachNamen()

@@ -45,6 +45,7 @@
   <ItemGroup>
 
     <Compile Include="Filter.cs" />
+    <Compile Include="Menu.cs" />
 
     <Compile Include="Partitionierung.cs" />
 
