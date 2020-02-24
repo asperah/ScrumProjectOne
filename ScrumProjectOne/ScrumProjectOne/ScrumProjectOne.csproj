@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="Gruppierung.cs" />
+
+
+    <Compile Include="Filter.cs" />
+    <Compile Include="Menu.cs" />
+
     <Compile Include="Partitionierung.cs" />
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sortieren.cs" />
