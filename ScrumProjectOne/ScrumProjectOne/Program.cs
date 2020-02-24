@@ -11,7 +11,7 @@ namespace ScrumProjectOne
         static void Main(string[] args)
         {
 
-            Gruppierung.GruppierenNachLängeUndAnfangsbuchstabe();
+            Gruppierung.auswahlGruppierung();
 
             //Partitionierung parti = new Partitionierung();
             //Console.WriteLine("Hallo");
@@ -21,7 +21,9 @@ namespace ScrumProjectOne
             //parti.firstFive();
             //parti.allExpectNull();
             //parti.upToTwelvev();
-            
+
+
+          
            
 
             Console.ReadLine();
