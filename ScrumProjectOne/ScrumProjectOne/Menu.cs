@@ -9,7 +9,7 @@ namespace ScrumProjectOne
 {
     class Menu
     {
-        public static void MainMenu()
+        public static void Hauptmenu()
         {         
             int auswahl;
             bool exitKey = true;

@@ -25,7 +25,7 @@ namespace ScrumProjectOne
 
             foreach ( var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
 
@@ -36,7 +36,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers.OrderByDescending(x => x);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+ " ");
             }
 
         }
@@ -46,7 +46,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers.Where(x => x % 2 == 0).OrderBy(x=> x);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
         }
@@ -56,7 +56,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers2.OrderBy(x => x.Length);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item+" ");
             }
 
         } 
@@ -67,7 +67,7 @@ namespace ScrumProjectOne
 
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+ " ");
             }
 
         }
@@ -78,7 +78,7 @@ namespace ScrumProjectOne
 
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
 
@@ -144,23 +144,31 @@ namespace ScrumProjectOne
                 case 1:
                     {
                         AufsteigendSortierenVonIntArray();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 2:
                     {
 
                         AbsteigendSortirenVonIntArray();
+                        Console.ReadLine();
+                        Console.Clear();
                         break; 
                     }
                 case 3:
                     {
                         GeradeZahlenSortiertAufsteigendAusgeben();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
                 case 4:
                     {
                         LängeDerWorteAufsteigen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
@@ -168,27 +176,37 @@ namespace ScrumProjectOne
                     {
 
                         LängeDerWorteAufsteigendUndAlphabetisch();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 6:
                     {
                         ReihenfolgeImArrayDrehen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 7:
                     {
                         InhaltAbsteigendNachNamen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
                 case 8:
                     {
                         InhaltNachGrößeSortiert();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 9:
                     {
                         DateienAuflistenNachDatum();
+                        Console.ReadLine();
+                        Console.Clear();
                         break; 
 
                     }
