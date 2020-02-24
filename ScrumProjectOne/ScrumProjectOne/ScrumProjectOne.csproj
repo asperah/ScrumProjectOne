@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
 
+    <Compile Include="Gruppierung.cs" />
+
+
     <Compile Include="Filter.cs" />
     <Compile Include="Menu.cs" />
 
