@@ -177,6 +177,7 @@ namespace ScrumProjectOne {
             Console.WriteLine();
         }
 
+
         public static void AuswahlVerfahren()
         {
         Console.Clear();
@@ -258,5 +259,6 @@ namespace ScrumProjectOne {
                 }
             }
         }
+
     }
 }
