@@ -10,11 +10,11 @@ namespace ScrumProjectOne
 
     class Partitionierung
     {
-        private int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
-        DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\ScrumProjectOne");
+        private static int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
+        static DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\ScrumProjectOne");
         
 
-        public void fiveNewestFiles()
+        public static void fiveNewestFiles()
         {
             List<FileSystemInfo> fsi;
             var aufg1 = info.GetFileSystemInfos().Take(5).OrderBy(x => x.CreationTime);
@@ -29,7 +29,7 @@ namespace ScrumProjectOne
 
 
 
-        public void firstFive()
+        public static void firstFive()
         {
             List<int> liste = new List<int>();
             var aufg1 = numbers.Take(5);
@@ -106,23 +106,31 @@ namespace ScrumProjectOne
                 case 1:
                     {
                         firstFive();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 2:
                     {
 
                         lastFive();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 3:
                     {
                         notFirstAndLastThree();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
                 case 4:
                     {
                         allExpectNull();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
@@ -130,11 +138,15 @@ namespace ScrumProjectOne
                     {
 
                         upToTwelvev();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 6:
                     {
                         fiveNewestFiles();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
 

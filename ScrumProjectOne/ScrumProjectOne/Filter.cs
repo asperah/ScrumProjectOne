@@ -36,7 +36,6 @@ namespace ScrumProjectOne {
                 Console.Write("{0}  ", number);
             }
             Console.WriteLine();
-            Console.WriteLine();
         }
 
         public static void Filter2a() {
@@ -51,7 +50,6 @@ namespace ScrumProjectOne {
             {
                 Console.Write("{0}  ", number);
             }
-            Console.WriteLine();
             Console.WriteLine();
         }
 
@@ -68,7 +66,6 @@ namespace ScrumProjectOne {
                 Console.Write("{0}  ", number);
             }
             Console.WriteLine();
-            Console.WriteLine();
         }
 
         public static void Filter4a() {
@@ -83,7 +80,6 @@ namespace ScrumProjectOne {
             {
                 Console.Write("{0}  ", number);
             }
-            Console.WriteLine();
             Console.WriteLine();
         }
 
@@ -100,7 +96,6 @@ namespace ScrumProjectOne {
             {
                 Console.Write("{0}  ", letters);
             }
-            Console.WriteLine();
             Console.WriteLine();
         }
 
@@ -119,7 +114,6 @@ namespace ScrumProjectOne {
                 Console.Write("{0}  ", letters);
             }
             Console.WriteLine();
-            Console.WriteLine();
         }
 
         public static void Filter3b() {
@@ -136,7 +130,6 @@ namespace ScrumProjectOne {
             {
                 Console.Write("{0}  ", letters);
             }
-            Console.WriteLine();
             Console.WriteLine();
         }
 
@@ -156,7 +149,6 @@ namespace ScrumProjectOne {
                 Console.Write("{0}  ", letters);
             }
             Console.WriteLine();
-            Console.WriteLine();
         }
 
         public static void Filter5b() {
@@ -173,7 +165,6 @@ namespace ScrumProjectOne {
             {
                 Console.Write("{0}  ", letters);
             }
-            Console.WriteLine();
             Console.WriteLine();
         }
 
