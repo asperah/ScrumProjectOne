@@ -89,15 +89,22 @@ namespace ScrumProjectOne
 
         public static void AuswahlVerfahren()
         {
+            Console.Clear();
             int auswahl;
-
+            bool filtermenu=true;
+            while(filtermenu){
+                Console.WriteLine(  "=============================================\n" +
+                                    "+             Partitionierung               +\n" +
+                                    "=============================================\n");
             Console.WriteLine("Welches Partitionierungsverfahren möchten sie anwenden ?\n" +
-                              "[1] Die ersten fünf Elemente des Arrays ausgeben. \n" +
-                              "[2] Die letzten fünf Elemente des Arrays ausgeben.\n" +
-                              "[3] Alle Elemente bis auf die ersten und letzten drei im Array.\n" +
-                              "[4] Alle Elemente des Arrays die größer als 0 sind.\n" +
-                              "[5] Alle Elemente im Array nach der Zwölf.\n" +
-                              "[6] Die fünf neuesten Dateien in einem Verzeichnis.\n");
+                              "\t[1] Die ersten fünf Elemente des Arrays ausgeben. \n" +
+                              "\t[2] Die letzten fünf Elemente des Arrays ausgeben.\n" +
+                              "\t[3] Alle Elemente bis auf die ersten und letzten drei im Array.\n" +
+                              "\t[4] Alle Elemente des Arrays die größer als 0 sind.\n" +
+                              "\t[5] Alle Elemente im Array nach der Zwölf.\n" +
+                              "\t[6] Die fünf neuesten Dateien in einem Verzeichnis.\n"+
+                              "[0] Die ersten fünf Elemente des Arrays ausgeben. \n" 
+                              );
 
             auswahl = Convert.ToInt32(Console.ReadLine());
 
@@ -149,8 +156,11 @@ namespace ScrumProjectOne
                         Console.Clear();
                         break;
                     }
+                case 0:
+                        filtermenu = false;
+                        break;
 
-            }
+            }}
 
 
         }

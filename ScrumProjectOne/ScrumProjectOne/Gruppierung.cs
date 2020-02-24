@@ -68,5 +68,58 @@ namespace ScrumProjectOne
 
 
         }
+        public static void AuswahlVerfahren()
+        {
+            Console.Clear();
+            int auswahl;
+            bool filtermenu = true;
+            while(filtermenu){
+                Console.WriteLine(  "=============================================\n" +
+                                    "+                Gruppierung                +\n" +
+                                    "=============================================\n");
+            Console.WriteLine("Welches Gruppierungsverfahren möchten sie anwenden ?\n" +
+                              "\t[1] Gruppieren nach Anfangsbuchstaben. \n" +
+                              "\t[2] Gruppieren nach Länge.\n" +
+                              "\t[3] Gruppieren nach Länge und Anfangsbuchstaben.\n" +
+                              "[0] Die ersten fünf Elemente des Arrays ausgeben. \n" 
+                              );
+
+
+            auswahl = Convert.ToInt32(Console.ReadLine());
+
+            switch (auswahl)
+            {
+                case 1:
+                    {
+                        GruppierenNachAnfangsBuchstaben();
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    }
+                case 2:
+                    {
+
+                        GruppierenNachLänge();
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    }
+                case 3:
+                    {
+                        GruppierenNachLängeUndAnfangsbuchstabe();
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+
+                    }
+                    case 0:
+                        filtermenu = false;
+                        break;
+                
+                }
+            }
+
+
+        }
     }
 }

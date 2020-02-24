@@ -25,8 +25,9 @@ namespace ScrumProjectOne
             int auswahl;
             bool exitKey = true;
             while (exitKey)
-            {Console.Clear();
-               Console.WriteLine(  "=============================================\n" +
+            {
+                Console.Clear();
+                Console.WriteLine(  "=============================================\n" +
                                     "+++             SrumProjectOne            +++\n" +
                                     "+++   written by the Developer Division   +++\n" +
                                     "=============================================\n" );
@@ -38,6 +39,7 @@ namespace ScrumProjectOne
                                     "\t[1] Sortieren\n" +
                                     "\t[2] Filtern\n" +
                                     "\t[3] Partitionieren\n" +
+                                    "\t[4] Gruppieren\n" +
                                     "\t[0] Das Programm verlassen.");
                 auswahl = Convert.ToInt32(Console.ReadLine());
 
@@ -68,6 +70,9 @@ namespace ScrumProjectOne
                             Console.Clear();
                             break;
                         }
+                    case 4: 
+                        Gruppierung.AuswahlVerfahren();
+                        break;
 
 
 

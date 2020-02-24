@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ScrumProjectOne {
 
     class Filter {
-
+        
         static int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
         static string[] numbers2 = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "eleven", "twelve", "thirteen", "fourteen" };
 
@@ -193,7 +193,7 @@ namespace ScrumProjectOne {
                                   "\t[6] Alle Zahlen die ein 'o' enthalten anzeigen.\n" +
                                   "\t[7] Alle zahlen die auf 'Teen' enden.\n" +
                                   "\t[8] Die Großbuchstabendasstellung aller Zahlen die auf 'teen' enden anzeigen.\n" +
-                                  "\t[9] Alle Zahlen die 'four' enthalten anzeigen.\n\b"+
+                                  "\t[9] Alle Zahlen die 'four' enthalten anzeigen.\n"+
                     "[0] Zurück zum Hauptmenü.\n");
                 auswahl = Convert.ToInt32(Console.ReadLine());
 

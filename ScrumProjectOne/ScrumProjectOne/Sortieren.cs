@@ -124,8 +124,13 @@ namespace ScrumProjectOne
 
         public static void AuswahlVerfahren()
         {
+            Console.Clear();
             int auswahl; 
-
+            bool filtermenu = true;
+            while(filtermenu){
+                Console.WriteLine(  "=============================================\n" +
+                                    "+               Sortieren                   +\n" +
+                                    "=============================================");
             Console.WriteLine("Welches Sortier Verfahren möchten sie anwenden ?\n" +
                               "[1] Zahlen Array aufsteigend Sortiert ausgeben \n" +
                               "[2] Zahlen array absteigend Sortieren\n" +
@@ -135,12 +140,17 @@ namespace ScrumProjectOne
                               "[6] Wörter Array in umgekehrter Reheinfolge ausgeben\n" +
                               "[7] Liste der Dateien Absteigend nach Namen sortiert\n" +
                               "[8] Liste nach Größe aufsteigen sortieren\n" +
-                              "[9] Liste nach Datum des Letzten zugriffs Sortieren, Jüngste zuerst\n\b");
+                              "[9] Liste nach Datum des Letzten zugriffs Sortieren, Jüngste zuerst\n"+
+                              "[0] Zurück zum Hauptmenu. \n" 
+                              );
 
             auswahl = Convert.ToInt32(Console.ReadLine());
 
             switch (auswahl)
             {
+                                    case 0:
+                        filtermenu = false;
+                        break;
                 case 1:
                     {
                         AufsteigendSortierenVonIntArray();
@@ -214,7 +224,7 @@ namespace ScrumProjectOne
 
 
             }
-
+                }
         }
 
     }
