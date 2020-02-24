@@ -7,12 +7,13 @@ using System.IO;
 namespace ScrumProjectOne
 {
 
+
     public delegate void SortierenDelegate();
+
       
 
     class Sortieren
     {
-        public static SortierenDelegate sortieren = new SortierenDelegate(Sortieren.AuswahlVerfahren);
 
         static int[] numbers = new int[] { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0, 22, 12, 16, 18, 11, 19, 13 };
         static string[] numbers2 = new string[] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen" };
@@ -24,7 +25,7 @@ namespace ScrumProjectOne
 
             foreach ( var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
 
@@ -35,7 +36,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers.OrderByDescending(x => x);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+ " ");
             }
 
         }
@@ -45,7 +46,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers.Where(x => x % 2 == 0).OrderBy(x=> x);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
         }
@@ -55,7 +56,7 @@ namespace ScrumProjectOne
             var nummer1 = numbers2.OrderBy(x => x.Length);
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item+" ");
             }
 
         } 
@@ -66,7 +67,7 @@ namespace ScrumProjectOne
 
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+ " ");
             }
 
         }
@@ -77,13 +78,15 @@ namespace ScrumProjectOne
 
             foreach (var item in nummer1)
             {
-                Console.WriteLine(item);
+                Console.Write(item+" ");
             }
 
 
         }
         // Erstellen der Directory Info Objekt
-        static DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\source\repos\ScrumProjectOne\ScrumProjectOne\ScrumProjectOne");
+
+        static DirectoryInfo info = new DirectoryInfo(@"C:\Users\Administrator\ScrumProjectOne");
+
 
         //Inhalt absteigend nach namen sortiert 
         public static void InhaltAbsteigendNachNamen()
@@ -141,23 +144,31 @@ namespace ScrumProjectOne
                 case 1:
                     {
                         AufsteigendSortierenVonIntArray();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 2:
                     {
 
                         AbsteigendSortirenVonIntArray();
+                        Console.ReadLine();
+                        Console.Clear();
                         break; 
                     }
                 case 3:
                     {
                         GeradeZahlenSortiertAufsteigendAusgeben();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
                 case 4:
                     {
                         LängeDerWorteAufsteigen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
@@ -165,27 +176,37 @@ namespace ScrumProjectOne
                     {
 
                         LängeDerWorteAufsteigendUndAlphabetisch();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 6:
                     {
                         ReihenfolgeImArrayDrehen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 7:
                     {
                         InhaltAbsteigendNachNamen();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
 
                     }
                 case 8:
                     {
                         InhaltNachGrößeSortiert();
+                        Console.ReadLine();
+                        Console.Clear();
                         break;
                     }
                 case 9:
                     {
                         DateienAuflistenNachDatum();
+                        Console.ReadLine();
+                        Console.Clear();
                         break; 
 
                     }
